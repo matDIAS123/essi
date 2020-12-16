@@ -1,7 +1,12 @@
 <?php
 namespace DAO;
 mysqli_report(MYSQLI_REPORT_STRICT);
-require_once('../models/Usuario.php');
+
+$ds = DIRECTORY_SEPARATOR;
+$base_dir = dirname(__FILE__).$ds;
+
+require($base_dir.'../models/Usuario.php');
+
 use models\Usuario;
 
 /**
@@ -39,7 +44,7 @@ class DAOUsuario{
 
          if($resultado->num_rows === 0){
             $usuario->addUsuario(null, null, null, null, FALSE);
-            throw new \Exception("Usuário ou senha inválidos!");
+            throw new \Exception("Login e senha inválidos!");
          }else{
             while($linha = $resultado->fetch_assoc()){
                $usuario->addUsuario($linha['login'], $linha['nome'], $linha['email'], $linha['celular'], TRUE);
