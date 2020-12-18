@@ -3,7 +3,7 @@ namespace models;
 /**
  * Classe Model de Usuários
  *
- * @author Paulo Roberto Córdova
+ * @author Matheus Dias
  *
  */
 class Usuario{

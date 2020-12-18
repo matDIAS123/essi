@@ -13,7 +13,7 @@ use models\Prospect;
  * Esta classe é reponsável por fazer a comunicação com o banco de dados,
  * provendo as funções CRUD para os Prospects
  *
- * @author Paulo Roberto Córdova
+ * @author Matheus Dias
  * @package DAO
  */
 class DAOProspect{

@@ -19,7 +19,7 @@ if(isset($_SESSION['usuario'])){
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Bem Vindo ao Sistema</title>
+        <title>Voce de novo aqui?</title>
         <link rel="stylesheet" type="text/css" href="../../libs/bootstrap/css/bootstrap.css">
         <meta charset="UTF-8">
     </head>

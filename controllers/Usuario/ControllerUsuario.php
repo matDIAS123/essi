@@ -12,8 +12,7 @@ use DAO\DAOUsuario;
  * Esta classe serve para tratar as regras de negócio pertinentes à
  * classe Usuário.
  * Seu escopo limita-se às funções da entidade Usuário
- *
- * @author Paulo Roberto Córdova
+ * @author Matheus Dias
  */class ControllerUsuario{
     /**
     * Recebe os dados de login, faz o devido tratamento e envia para a DAO executar

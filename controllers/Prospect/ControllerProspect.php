@@ -8,18 +8,12 @@ require_once($root.'/esii-2020/DAO/DAOProspect.php');
 use dao\DAOProspect;
 
 /**
- * Esta classe é responsável por fazer o tratamento dos dados para apresentação e/ou
- * envio para a DAO executar as consultas no banco de dados.
- * Seu escopo se limita às funções da entidade prospect.
- *
- * @author Paulo Roberto Córdova
- *
+ * Esta classe é responsável por fazer o tratamento dos dados para apresentação e/ou envio para a DAO executar as consultas no banco de dados.Seu escopo se limita às funções da entidade prospect.
+ * @author Matheus Dias
  */
 class ControllerProspect{
    /**
-    * Recebe um objeto do tipo Prospect, verifica se é para salvar ou alterar
-    * e envia para a DAO executar a operação solicitada
-    *
+    * Recebe um objeto do tipo Prospect, verifica se é para salvar ou alterare envia para a DAO executar a operação solicitada
     * @param Prospect $prospect Objeto do tipo usuário
     * @return TRUE|Exception Retorna TRUE caso a operação tenha sido bem sucedida e Exception, caso não tenha.
     */
@@ -28,7 +22,7 @@ class ControllerProspect{
 
       if($prospect->codigo === null){
          /**
-          * Captura a exceção retornada pelo DAO no caso de falha ao incluir prospect'
+          * Captura a exceção retornada pelo DAO no caso de falha ao incluir prospect
           * e dispara outra exceção para ser tratada por quem chamar a função
           */
          try{
@@ -55,7 +49,6 @@ class ControllerProspect{
    }
    /**
     * Recebe um objeto do tipo Prospect e envia para a DAO concluir a exclusão
-    *
     * @param Prospect $prospect Objeto Prospect informando o código do prospect a ser excluído
     * @return TRUE|Exception Retorna TRUE caso a inclusão tenha sido bem sucedida
     * ou uma Exception caso não tenha.
